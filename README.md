@@ -9,4 +9,4 @@
 > 收藏一些关于前端 [html、css、javascript] 的代码片段。
 
 ## example
-- [涟漪按钮.html](./example/涟漪按钮.html) @gongchao
+- [涟漪按钮](./example/涟漪按钮/) Committer by [@Gongchao](https://github.com/gongchao)
