@@ -8,5 +8,7 @@
 # web-code-snippet
 > 收藏一些关于前端 [html、css、javascript] 的代码片段。
 
-## example
-- [涟漪按钮](./example/涟漪按钮/) Committer by [@Gongchao](https://github.com/gongchao)
+## Example
+- [涟漪按钮](./example/涟漪按钮/) Committer [@Gongchao](https://github.com/gongchao)
+
+![涟漪按钮](./example/涟漪按钮/demo.gif)

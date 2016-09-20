@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="cn-ZH">
+<head>
+    <meta charset="UTF-8">
+    <title>涟漪按钮</title>
+    <style>
+        .btn {
+            position: relative;
+            display: inline-block;
+            border: 1px solid #ddd;
+            width: 200px;
+            height: 45px;
+            text-align: center;
+            line-height: 45px;
+            cursor: pointer;
+            overflow: hidden;
+        }
+
+        .ink {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: block;
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            background: RGBA(40, 44, 52, .3);
+            transform: scale(0);
+        }
+
+        .animation {
+            animation: ripple 1s linear;
+        }
+
+        @keyframes ripple {
+            to {
+                opacity: 0;
+                transform: scale(2.5);
+            }
+        }
+    </style>
+</head>
+<body style="text-align: center; padding-top: 50px;">
+    <div class="btn">
+        按钮
+    </div>
+
+    <script type="text/javascript">
+        document.querySelector('.btn').addEventListener('click', function (Event) {
+            if (this.querySelectorAll('.ink').length === 0) {
+                var inkElement = document.createElement('span');
+                inkElement.setAttribute('class', 'ink')
+                this.insertBefore(inkElement, this.firstChild)
+            }
+            var ink = this.querySelector('.ink');
+            ink.setAttribute('class', 'ink');
+            var top = Event.offsetY - ink.offsetHeight/2,
+                left = Event.offsetX - ink.offsetWidth/2;
+            ink.style.top = top + 'px';
+            ink.style.left = left + 'px';
+            ink.setAttribute('class', 'ink animation');
+        })
+    </script>
+</body>
+</html>
