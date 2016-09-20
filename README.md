@@ -7,8 +7,8 @@
 
 # web-code-snippet
 > 收藏一些关于前端 [html、css、javascript] 的代码片段。
+> 每日更新一个小片段
 
 ## Example
-- [涟漪按钮](./example/涟漪按钮/) Committer [@Gongchao](https://github.com/gongchao)
-
+- 2016-09-20 [涟漪按钮](./example/涟漪按钮/) Committer [@Gongchao](https://github.com/gongchao)
 ![涟漪按钮](./example/涟漪按钮/demo.gif)
