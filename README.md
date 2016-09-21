@@ -1,7 +1,7 @@
 
 <p>
     <a href="https://github.com/gongchao/web-code-snippet">
-        <img src="./assset/logo.png" alt="web-code-snippet" width="460">
+        <img src="./assets/logo.png" alt="web-code-snippet" width="460">
     </a>
 </p>
 
